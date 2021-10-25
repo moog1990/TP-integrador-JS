@@ -9,6 +9,9 @@
     <title>TP Integrador</title>
 </head>
 <body>
+
+                                                <!--BARRA DE NVEGACIÓN-->
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark navOpacity sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="img/codoacodo.png" alt="" width="80" height="50" class="d-inline-block align-text-center"> Conf Bs As</a>
@@ -39,7 +42,10 @@
       </div>
     </nav>
 
-    <main></main>
+    <main>
+
+                                                  <!--CAROUSEL-->
+
     <div>
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner carouselDiv">
@@ -92,6 +98,8 @@
         </div>
       </div>
 
+                                                    <!--ORADORES-->
+                                                    
       <div class="text-center">
         <p style="margin-bottom: 0;"> CONOCE A LOS </p>
         <h2>ORADORES</h2>
@@ -142,6 +150,9 @@
                   </div>
               </div>
           </div>
+        
+
+                                              <!--INFO SEDE-->
 
       <div class="card text-white bg-dark mb-5">
         <div class="row g-0">
@@ -162,6 +173,9 @@
             </div>
         </div>
       </div>
+
+                                                   <!--INFO DESCUENTOS-->
+
 <div class="container-fluid" style="max-width:50rem;">
   <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
     <div class="col">
@@ -196,64 +210,55 @@
     </div>
   </div>
 </div>
-      
+    
+                                                        <!--FORMULARIO-->
+
 <div class="text-center">
   <p style="margin-bottom: 0%;"> VENTA </p>
   <h2>VALOR DE TICKET $200</h2>
 </div>
 
-<div class="container form" style="max-width:50rem;">
-  <div class="row">
-      <div class="col mb-3">
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
-      </div>
-      <div class="col mb-3">
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
-      </div>
+<form class="row g-2 w-75 mx-auto" >
+  <div class="col-6">
+     <input type="text" class="form-control" placeholder="Nombre"> 
   </div>
-  <div class="row">
-    <div class="mb-3">
-      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo">
-     </div>
+  <div class="col-6">
+      <input type="text" class="form-control" placeholder="Apellido">
   </div>
-  <div class="row">
-    <div class="col mb-3">
-      <p>Cantidad</p>
-        <input id="cantidad" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Cantidad" min=1 max=5>
+ <br>
+  <div class="col-12">
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
   </div>
-  <div class="col mb-3">
-    <p>Categoria</p>
-    <select class="form-select">
-      <option hidden>Categoria</option>
-      <option value=80>Estudiante</option>
-      <option value=50>Trainee</option>
-      <option value=15>Junior</option>
+  <div class="col-6 ">
+      <label>Cantidad</label>
+      <input id="cantidad" type="number" class="form-control" placeholder="Cantidad" min=1 max=5> 
+   </div>
+   <div class="col-6">
+       <label>Categoria</label>
+       <select class="form-select" aria-label="Default select example">
+      <option hidden>Elija una opción</option>
+      <option value="80">Estudiante</option>
+      <option value="50">Trainee</option>
+      <option value="15">Junior</option>
     </select>
+  </div> 
+  <div>
+    <p id="pagar" class="p-3 rounded border border-warning">Total a pagar: $</p>
   </div>
+  <div class="col-6">
+    <button id="borrar" class="botones rounded p-2 w-100 text-white" type="reset">Borrar</button>
   </div>
-  <div class="row">
-    <div class="card mb-3">
-      <div>
-        <p id="pagar" style="padding-top: 10px;">Total a pagar: $</p>
-      </div>
-    </div>
-<div class="container"></div>
-  </div>
-  <div class="row">
-    <div class="col mb-3 d-grid gap-2">
-      <button id="borrar" class="btn btn-success" type="button" style="background-color: rgb(98, 175, 98);">Borrar</button>
-    </div>
-    <div class="col mb-3 d-grid gap-2">
-      <button id="resumen" class="btn btn-success" type="reset" style="background-color: rgb(98, 175, 98);">Resumen</button>
-    </div>
+  <div class="col-6">
+    <button id="resumen" class="botones rounded p-2 w-100 text-white" type="button">Resumen</button>
   </div>
 </div>
 </div>
   <br>
 </main>
     
+                                                  <!--FOOTER-->
 
-  <footer class="footerColor bg-gradient p-2 text-white px-5">
+  <footer class="footerColor bg-gradient p-2 text-white mx-auto px-4">
             <div class="row">
                 <div class="col align-self-center">
                     <a class="nav-link active text-white" aria-current="page" href="#">Preguntas Frecuentes</a>
